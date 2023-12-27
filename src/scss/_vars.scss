@@ -2,13 +2,21 @@
 // colors
 :root {
   // base
-  --font-family: "Roboto", sans-serif;
-  --content-width: 1360px;
-  --container-offset: 40px;
+  --font-family: "Muller", sans-serif;
+  --second-family: "Russo One", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 36px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --color-light: #fff;
-
-
+  --black: #07060b;
+  --grey-light: #ededf2;
+  --red: #d13130;
+  --white: #fff;
+  --grey-dark: #717178;
+  --grey-middle: #95959d;
+  --primary: #46f4db;
+  --primary-active: #57d272;
+  --gray-deep: #37373e;
+  --red-secondary: #ff6f6f;
 }

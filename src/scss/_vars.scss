@@ -4,7 +4,7 @@
   // base
   --font-family: "Muller", sans-serif;
   --second-family: "Russo One", sans-serif;
-  --content-width: 1280px;
+  --content-width: 1285px;
   --container-offset: 36px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
@@ -19,4 +19,11 @@
   --primary-active: #57d272;
   --gray-deep: #37373e;
   --red-secondary: #ff6f6f;
+  --button-cta: #46f4db;
+
+  // other
+  --input-height: 70px;
+  --section-padding-block: 90px;
+  --border-radius-main: 40px;
+  --gap: 32px;
 }

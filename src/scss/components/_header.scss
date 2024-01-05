@@ -1,6 +1,6 @@
 .header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   background-color: var(--white);
 
   &__container {
@@ -11,6 +11,10 @@
   &__wrapper {
     display: flex;
     column-gap: 64px;
+  }
+
+  &__logo-link {
+    margin: auto 0;
   }
 
   &__logo {
@@ -31,5 +35,23 @@
     font-weight: 700;
     font-size: 20px;
     color: var(--black);
+    transition: color, border, padding 0.3s ease;
+
+    &:focus {
+      border: 2px solid var(--primary-active);
+      padding: 3px 10px;
+      color: #06060b;
+      transition: color, border, padding 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--primary);
+      transition: 0.3s ease;
+    }
+
+    &:active {
+      color: var(--primary_active);
+      transition: 0.3s ease;
+    }
   }
 }

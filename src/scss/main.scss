@@ -6,8 +6,13 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
+@import "./components/auction";
+@import "./components/new-stickers";
+@import "./components/subscribe";
 
 @import "./components/footer";
 
 // подключения маленьких компонентов
-// @import "./components/nav";
+@import "./components/new-sticker__slider";
+@import "./components/sub-form";

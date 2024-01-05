@@ -1,0 +1,19 @@
+.hero {
+  padding-top: 162px;
+  padding-bottom: 160px;
+  background-image: url("../img/bg/stickers_hero.png");
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--black);
+
+  &__title {
+    margin-bottom: 36px;
+    max-width: 620px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+}

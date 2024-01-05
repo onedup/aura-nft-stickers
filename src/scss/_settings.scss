@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
@@ -83,8 +87,6 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
-
-
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -116,4 +118,159 @@ a {
   font-size: 16px;
   color: var(--white);
   background-color: var(--black);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  color: var(--black);
+
+  &--light {
+    color: var(--white);
+  }
+}
+
+.subsubtitle {
+  margin: 0;
+  margin-bottom: var(--gap);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.btn-buy,
+.btn-become-author,
+.btn-bid,
+.btn-auction-more,
+.btn-subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  height: var(--input-height);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-buy {
+  position: relative;
+  z-index: 1;
+  color: var(--black);
+  background: linear-gradient(180deg, #46f4db 27.08%, #57d272 100%);
+  transition: 0.3s ease-in;
+  padding-inline: 54px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-become-author {
+  position: relative;
+  z-index: 1;
+  border: 5px solid var(--button-cta);
+  text-align: center;
+  color: var(--white);
+  transition: color 0.3s ease-out;
+  padding-inline: 49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    border-radius: inherit;
+    width: 102%;
+    height: inherit;
+    background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &:hover {
+    color: var(--black);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-bid {
+  position: relative;
+  z-index: 1;
+  max-width: 296px;
+  color: var(--black);
+  background: var(--primary);
+  padding-inline: 74px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #46f4db 27.08%, #57d272 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-auction-more {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid var(--primary);
+  text-align: center;
+  color: var(--black);
+  transition: background-color 0.3s ease-out;
+  padding-inline: 75px;
+
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+.btn-subscribe {
+  align-self: start;
+  color: var(--black);
+  background-color: var(--primary);
+  padding-inline: 86px;
 }

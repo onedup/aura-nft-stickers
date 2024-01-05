@@ -1,0 +1,36 @@
+.new-stickers__slider .swiper-wrapper {
+  margin-bottom: 67px;
+}
+
+.swiper-pagination-new-stickers-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.swiper-pagination.swiper-pagination-new-stickers-bullets {
+  position: relative;
+}
+
+.swiper-pagination-new-stickers-bullets .swiper-pagination-bullet {
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--red);
+  border-radius: 40px;
+  padding-top: 3px;
+  width: 56px;
+  height: 36px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-new-stickers-bullets .swiper-pagination-bullet-active {
+  background-color: var(--red);
+  transition: 0.2s ease;
+}

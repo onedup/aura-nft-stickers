@@ -40,8 +40,7 @@ p {
 }
 
 .is-hidden {
-  display: none !important;
-  /* stylelint-disable-line declaration-no-important */
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -148,6 +147,10 @@ p {
   font-weight: 400;
   font-size: 20px;
   color: var(--white);
+
+  &--black {
+    color: var(--black);
+  }
 }
 
 .btn-buy,
@@ -211,7 +214,7 @@ p {
     border-radius: inherit;
     width: 102%;
     height: inherit;
-    background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+    background: linear-gradient(180deg, #46f4db 27.08%, #57d272 100%);
     opacity: 0;
     transition: opacity 0.3s ease-out;
   }

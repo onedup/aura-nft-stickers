@@ -1,0 +1,44 @@
+.get-to-top {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+  background-color: var(--gray-deep);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: var(--icon-gap);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+  }
+
+  &__bg {
+    width: 460px;
+    height: 160px;
+    background-image: url("../img/bg/smile-bg.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

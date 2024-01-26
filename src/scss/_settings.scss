@@ -110,15 +110,6 @@ p {
   position: relative;
 }
 
-.btn-wallet {
-  border-radius: 77px;
-  padding: 1.0625rem 1.9688rem;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--white);
-  background-color: var(--black);
-}
-
 .title {
   margin: 0;
   font-family: var(--second-family);
@@ -165,6 +156,25 @@ p {
   height: var(--input-height);
   font-weight: 700;
   font-size: 20px;
+}
+
+.btn-wallet {
+  border-radius: 77px;
+  padding: 1.0625rem 1.9688rem;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--black);
+  transition: background-color 0.3s, color 0.3s ease-in;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--black);
+  }
+
+  &:active {
+    background-color: var(--primary-active);
+  }
 }
 
 .btn-buy {

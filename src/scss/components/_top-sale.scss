@@ -1,6 +1,67 @@
 .top-sale {
+  margin-top: -4px;
   padding-top: var(--section-padding-block);
   padding-bottom: var(--section-padding-block);
   background-color: var(--black);
 
+  &__subtitle {
+    margin-bottom: var(--gap);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+  }
+}
+
+.sale-card {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius-main);
+  max-height: 174px;
+  background-color: var(--white);
+
+  &__sticker {
+    border-radius: var(--border-radius-main) 0 0 var(--border-radius-main);
+    padding: 16px 0 16px 16px;
+    max-height: 174px;
+    background-color: var(--grey-light);
+  }
+
+  &__img {
+    max-width: 126px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    gap: 9px;
+  }
+
+  &__user {
+    display: flex;
+  }
+
+  &__nickname {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__sticker-name {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 20px;
+
+    &--highlight {
+      color: var(--grey-middle)
+    }
+  }
 }
